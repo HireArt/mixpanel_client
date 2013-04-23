@@ -18,7 +18,7 @@ or if you use a Gemfile
     require 'mixpanel_client'
 
     config = {api_key: 'changeme', api_secret: 'changeme'}
-    client = Mixpanel::Client.new(config)
+    client = MixpanelAPI::Client.new(config)
 
     data = client.request('events/properties', {
       event:     'splash features',
@@ -38,7 +38,7 @@ or if you use a Gemfile
     require 'mixpanel_client'
 
     config = {api_key: 'changeme', api_secret: 'changeme', parallel: true}    
-    client = Mixpanel::Client.new(config)
+    client = MixpanelAPI::Client.new(config)
 
     first_request = client.request('events/properties', {
     ...
@@ -120,7 +120,7 @@ Create tag v2.0.2 and build and push mixpanel_client-2.0.2.gem to Rubygems
 
 ### v2.0.2
  * Added timezone to available options.
- * All exceptions can be caught under Mixpanel::Error.
+ * All exceptions can be caught under MixpanelAPI::Error.
 
 ### v2.0.1
  * Added options used in segmentation resources.
@@ -133,7 +133,7 @@ Create tag v2.0.2 and build and push mixpanel_client-2.0.2.gem to Rubygems
 
 ### v2.0.0.beta1
  * Reverted to namespacing via module name because it's a better practice.
-   I.e. Use `Mixpanel::Client` instead of `MixpanelClient`.
+   I.e. Use `MixpanelAPI::Client` instead of `MixpanelClient`.
  * Added 'values' as an optional parameter
  * `gem install mixpanel_client --pre`
 

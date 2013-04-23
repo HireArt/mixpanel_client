@@ -6,8 +6,8 @@
 #
 # Copyright (c) 2009+ Keolo Keagy
 # See LICENSE for details
-module Mixpanel
-  # Utility methods for Mixpanel::Client
+module MixpanelAPI
+  # Utility methods for MixpanelAPI::Client
   class Client
     module Utils
       # Return a string composed of hashed values specified by the mixpanel data API

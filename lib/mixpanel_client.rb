@@ -13,7 +13,7 @@ require 'digest/md5'
 require 'open-uri'
 require 'json' unless defined?(JSON)
 
-# Mixpanel::Client libraries.
+# MixpanelAPI::Client libraries.
 require "#{File.dirname(__FILE__)}/mixpanel/client"
 require "#{File.dirname(__FILE__)}/mixpanel/utils"
 require "#{File.dirname(__FILE__)}/mixpanel/uri"

@@ -6,7 +6,7 @@
 #
 # Copyright (c) 2009+ Keolo Keagy
 # See LICENSE for details
-module Mixpanel
+module MixpanelAPI
   # URI related exceptions
   class Error < StandardError; end
   class HTTPError < Error; end

@@ -6,11 +6,11 @@
 #
 # Copyright (c) 2009+ Keolo Keagy
 # See LICENSE for details
-module Mixpanel
+module MixpanelAPI
   # Utilities to assist generating and requesting URIs
   class URI
     def self.mixpanel(resource, params)
-      base = Mixpanel::Client.base_uri_for_resource(resource)
+      base = MixpanelAPI::Client.base_uri_for_resource(resource)
       "#{File.join([base, resource.to_s])}?#{self.encode(params)}"
     end
 

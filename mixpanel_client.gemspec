@@ -4,7 +4,7 @@ require 'mixpanel/version'
 
 Gem::Specification.new do |s|
   s.name        = 'mixpanel_client'
-  s.version     = Mixpanel::Client::VERSION
+  s.version     = MixpanelAPI::Client::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ['Keolo Keagy']
   s.email       = ['keolo@dreampointmedia.com']

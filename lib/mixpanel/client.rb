@@ -6,7 +6,7 @@
 #
 # Copyright (c) 2009+ Keolo Keagy
 # See LICENSE for details
-module Mixpanel
+module MixpanelAPI
   # Return metrics from Mixpanel Data API
   class Client
     BASE_URI = 'https://mixpanel.com/api/2.0'
@@ -19,7 +19,7 @@ module Mixpanel
     #
     # @example
     #   config = {'api_key' => '123', 'api_secret' => '456'}
-    #   client = Mixpanel::Client.new(config)
+    #   client = MixpanelAPI::Client.new(config)
     #
     # @param [Hash] config consisting of an 'api_key' and an 'api_secret'
     def initialize(config)

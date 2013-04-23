@@ -6,7 +6,7 @@ describe 'External calls to mixpanel' do
   before :all do
     config = YAML.load_file(File.dirname(__FILE__) + '/../../config/mixpanel.yml')['mixpanel']
     config.should_not be_nil
-    @client = Mixpanel::Client.new(config)
+    @client = MixpanelAPI::Client.new(config)
   end
 
   context 'when requesting events' do
@@ -14,7 +14,7 @@ describe 'External calls to mixpanel' do
       data = lambda {
         @client.request('events', {})
       }
-      data.should raise_error(Mixpanel::HTTPError)
+      data.should raise_error(MixpanelAPI::HTTPError)
     end
 
     it 'should return events' do
